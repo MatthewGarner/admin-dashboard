@@ -1,31 +1,56 @@
 :root {
     padding: 0;
     margin: 0;
+    font-size: 16pt;
 }
 
 body {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    padding: 10px;
 }
 
 .sidebar {
     display: grid;
     grid-template-columns: 100%;
     grid-column: 1 / 2;
-    height: 1vh;
+    grid-row: span 2;
+    background-color: #0ea5e9;
+    height: 100vh;
+    padding: 10px;
+    text-align: left;
+    
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-column: 2 / 3;
+    padding: 10px;
 
 }
 
 ul {
     list-style-type: none;
+    padding: 5px;
+}
+
+.top-header {
+    background-color: lightblue;
+}
+
+.search-bar {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bottom-header {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
 }
